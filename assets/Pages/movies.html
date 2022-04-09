@@ -9,38 +9,80 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    
-    
-   <link rel="stylesheet" href="Assests\CSS\stylesheet.css">
+  <link rel="stylesheet" href="assets\CSS\stylesheet.css">
   </head>
   <body>
-    <nav class="pagination" role="navigation" aria-label="pagination">
-      <a class="pagination-previous">Previous</a>
-      <a class="pagination-next">Next page</a>
-      <ul class="pagination-list">
-        <li>
-          <a class="pagination-link" aria-label="Goto page 1">1</a>
-        </li>
-        <li>
-          <span class="pagination-ellipsis">&hellip;</span>
-        </li>
-        <li>
-          <a class="pagination-link" aria-label="Goto page 45">45</a>
-        </li>
-        <li>
-          <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
-        </li>
-        <li>
-          <a class="pagination-link" aria-label=""></a>
-        </li>
-        <li>
-          <span class="pagination-ellipsis">&hellip;</span>
-        </li>
-        <li>
-          <a class="pagination-link" aria-label="sim-title">similar titles</a>
-        </li>
-      </ul>
-    </nav>
+    <!-- this is to show the logo of the movie -->
+    <div class = "wrapper is-three-quarters">
+      <!-- logo -->
+      <div class = "logo">
+          <div class = "container is-small">
+              <p>Movie<span></span></p>
+          </div>
+      </div>
+
+    <!-- search container -->
+    <div class = "search-container is-two-thirds">
+      <div class = "search-element">
+          <h3>Search Movie:</h3>
+          <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+          <div class = "search-list" id = "search-list">
+      </div>
+      </div>
+                          <!-- list here -->
+                    <!-- <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "medium-cover.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Guardians of the Galaxy Vol. 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+            <!-- end of search container -->
+    
+            <!-- result container -->
+            <!-- <div class="container is-widescreen">
+              <div class="notification is-primary">
+                 -->
+
+             <div class = "container is-widescreen">
+                <div class = "result-container is-primary">
+                    <div class = "result-grid" id = "result-grid">
+                      
+                        <!-- movie information here -->
+                         <div class = "movie-poster">
+                            <img src = "assets\Pages\_R000077.jpeg" alt = "movie poster">
+                        </div>
+                        <div class = "movie-info">
+                            <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                            <ul class = "movie-misc-info">
+                                <li class = "year">Year: 2017</li>
+                                <li class = "rated">Ratings: PG-13</li>
+                                <li class = "released">Released: 05 May 2017</li>
+                            </ul>
+                            <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                            <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                            <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                            <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                            <p class = "language"><b>Language:</b> English</p>
+                            <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of result container -->
+        </div>
+        
+    
+    
+        <!-- movie app js -->
+        <script src = "/assets/JS/javascript.js"></script>
+
 
   </body>
 </html>
