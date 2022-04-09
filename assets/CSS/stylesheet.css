@@ -7,3 +7,16 @@
     display: inline-flexbox;
     
 }
+.picture{
+    max-width: 10vw;
+    position: relative;
+    left: 30vw;
+}
+.movietitle{
+    font-size: 40px;
+    color: black;
+    position: relative;
+    left: 45vw;
+    top: 5vh;
+    font-weight: bold;
+}
