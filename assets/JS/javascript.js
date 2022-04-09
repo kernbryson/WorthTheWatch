@@ -1,21 +1,16 @@
+let imdbUrl = "https://imdb-api.com/en/API/Search/k_w0qs6e0f/";
 let imdbKey = "k_w0qs6e0f";
+let searchValue = "";
 let searchBtn = document.querySelector(".search-btn");
 let searchInput = document.querySelector(".search-input");
-let selectGenre = document.querySelector("#genre");
 searchBtn.addEventListener("click", search);
-function search() {
-  let searchValue = searchInput.value;
-   searchGenre = selectGenre.textContent;
+function search(searchValue) {
+  searchValue = searchInput.value;
   console.log(searchValue);
   getMovies(searchValue);
 }
-function getMovies(searchValue, searchGenre) {
-  fetch(
-    "https://imdb-api.com/API/AdvancedSearch/k_w0qs6e0f?title=" +
-      searchValue +
-      "&title_type=feature&genres=" +
-      genre
-  )
+function getMovies(searchValue) {
+  fetch(imdbUrl + searchValue)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
