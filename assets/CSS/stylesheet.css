@@ -1,0 +1,9 @@
+:root {
+    background-color: rgb(202, 205, 55);
+    color: rgba(38, 143, 212, 0.512);
+
+}
+#field {
+    display: inline-flexbox;
+    
+}

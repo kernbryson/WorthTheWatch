@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Worth the Watch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/CSS/stylesheet.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Is it Worth the Watch ?</h1>
+        <hr />
+<!-- Form starts here -->
+        <div class="field">
+          <div class="control">
+            <input
+              class="input is-small search-input"
+              type="text"
+              placeholder="please enter the title "
+              id="search-title"
+/>
+          </div>
+            <button class="button is-link search-btn">Search</button>
+         
+        </div>
+
+        <div class="field">
+          <label class="label">Genre</label>
+          <div class="control">
+            <div class="select">
+              <select id="genre">
+                <option id="action">action</option>
+                <option id="">documentary</option>
+                <option id="">drama</option>
+                <option id="">family</option>
+                <option id="">mystery</option>
+                <option id="">news</option>
+                <option id="">romance</option>
+                <option id="">western</option>
+              </select>
+              <!-- <div class="field">
+                <label class="label">Genre</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="">
+                      </select>
+            </div> -->
+          <!-- </div> -->
+        </div>
+
+      </div><!-- Form ends here -->
+    </section>
+    <script src="./assets/JS/javascript.js"></script>
+  </body>
 </html>
