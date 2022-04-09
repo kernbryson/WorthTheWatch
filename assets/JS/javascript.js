@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-gxygxulgxdil
-=======
 let imdbUrl = "https://imdb-api.com/en/API/Search/k_w0qs6e0f/";
 let imdbKey = "k_w0qs6e0f";
 let rottenUrl =
@@ -22,4 +19,3 @@ function getMovies(searchValue) {
       console.log(data);
     });
 }
->>>>>>> e93d554171d7d0cdc0bc9d063353165e74505349
