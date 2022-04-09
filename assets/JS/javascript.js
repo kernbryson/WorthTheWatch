@@ -20,6 +20,7 @@ function getMovies(searchValue) {
   fetch(imdbUrl + searchValue)
     .then((response) => response.json())
     .then((data) => {
+      //get movie title
       console.log(data);
       let list = document.createElement("li");
       let title = data["results"]["0"]["title"];
@@ -27,6 +28,14 @@ function getMovies(searchValue) {
       titleName.classList.add("movietitle");
       list.append(titleName);
       titleName.textContent = title;
+      //get movie date
+      let releaseDate = data["results"]["0"]["description"];
+      let movieDate = document.createElement("h2");
+      movieDate.classList.add("movierelease");
+      console.log(releaseDate);
+      list.append(movieDate);
+      movieDate.textContent = releaseDate;
+      //get movie image
       let imageList = document.createElement("img");
       let moviePoster = data["results"]["0"]["image"];
       imageList.classList.add("picture");
@@ -34,7 +43,7 @@ function getMovies(searchValue) {
       ulMovie.append(list);
       list.append(imageList);
       console.log(moviePoster);
-  
+
       console.log(title);
     });
   //   let list = document.createElement("li");

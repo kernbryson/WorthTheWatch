@@ -19,4 +19,11 @@
     left: 45vw;
     top: 5vh;
     font-weight: bold;
+    text-decoration: underline;
+}
+.movierelease{
+    color: black;
+    position: relative;
+    left: 55vw;
+    top:1vh
 }
