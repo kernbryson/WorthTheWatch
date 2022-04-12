@@ -8,19 +8,19 @@
     
 }
 .picture{
-    max-width: 10vw;
+    width: 30vw;
+    height: 100vh;
     position: relative;
-    left: 30vw;
+    margin: 20px;
+   
 }
 .movietitle{
-    font-size: 40px;
+    font-size: 20px;
     color: black;
     position: relative;
-    left: 45vw;
-    top: 5vh;
     font-weight: bold;
     text-decoration: underline;
-    display: inline;
+   left: 2vh;
 }
 .movierelease{
     color: black;
@@ -58,4 +58,19 @@ color: black;
 font-size: 20px;
 max-width: 20vw;
 
+}.learnmorebtn{
+    position: absolute;
+    background-color: black;
+    color:white;
+    left: 42vw;
+    border-radius: 20px;
+    width: 500px;
+    height: 50px;
+    
+}
+.containertwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
