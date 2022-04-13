@@ -46,15 +46,19 @@ function displayMovies(resultsMovie) {
   for (var i = 1; i < resultsMovie.length; i++) {
       var card = $("<div>").addClass("card");      
       var title = $("<div>").addClass("card-header h5").text(resultsMovie[i].title);
-      var figure = $("<figure>").addClass("image is-128x128");
-      var imgIcon = $("<img>").attr("src", resultsMovie[i].image);
+      var figure = $("<figure>").addClass("image is-128x128");      
+      var imgIcon = $("<img>").attr("src", resultsMovie[i].image); 
+      var link = $("<a>").attr("href", "https://www.google.com");
+    
       figure.append(imgIcon);
+
+      
       
       var genre = $("<p>").addClass("card-text").text("Genre : " + resultsMovie[i].genres);
       var rating = $("<p>").addClass("card-text").text("Rating : " + resultsMovie[i].imDbRating);
       var plot = $("<p>").addClass("card-text").text("Plot : " + resultsMovie[i].plot);
       var cardBody = $("<div>").addClass("card-body");
-      cardBody.append(title, genre, rating, plot, figure);
+      cardBody.append(title, genre, rating, plot, figure,link);
       card.append(cardBody);
       $("#allMovies").append(card);
   }
