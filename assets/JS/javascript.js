@@ -147,6 +147,7 @@ function getMovies(genre, searchValue) {
 //       ulMovie.innerHTML = movies;
 //     });
 // }
+// bringing in the youtube api to include trailers as a feature in our returned movie search results
 let ytApiKey = "AIzaSyDiOCYClrpn3Cz3dIBf7MCWsD-e9KltnIE";
 function youtube(searchValue) {
   fetch(
@@ -163,7 +164,7 @@ function youtube(searchValue) {
     })  
     .catch(() => console.log("Error"));
 }
-
+// creating a card that will display the movies based on the value of i (returned results)
 function displayMovies(resultsMovie) {
   for (var i = 1; i < resultsMovie.length; i++) {
       var card = $("<div>").addClass("card");      
@@ -174,7 +175,7 @@ function displayMovies(resultsMovie) {
     
       figure.append(imgIcon);
 
-      
+      // appending the different fields to return the results from the movie search
       
       var genre = $("<p>").addClass("card-text").text("Genre : " + resultsMovie[i].genres);
       var rating = $("<p>").addClass("card-text").text("Rating : " + resultsMovie[i].imDbRating);
