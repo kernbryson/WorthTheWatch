@@ -1,5 +1,5 @@
 :root {
-    background-color:#999799;
+    background-color: #F49D37;
     color: rgba(38, 143, 212, 0.512);
 
 }
@@ -7,6 +7,10 @@
     display: inline-flexbox;
     
 }
+.background{
+    background-color:#999799;
+}
+
 .picture{
     width: 30vw;
     height: 100vh;
@@ -84,10 +88,10 @@ max-width: 20vw;
 }
 .movieposter{
     width: 40vw;
-    height: 90vh;
+    height: 100vh;
     display: inline;
     position: relative;
-    top: 4vh;
+    top: 15vh;
     border: solid black 10px;
     margin-left: 50px;
 }
@@ -100,10 +104,10 @@ max-width: 20vw;
 }
 .title{
     font-size: 40px;
-    color: #999799;
-    text-decoration: underline;
-    
+    color: black;
     font-weight: bold;
+    text-align: center;
+    font-family: "roboto";
     
 }
 .movie-title{
@@ -135,3 +139,42 @@ background-color: white;
 .titlebox{
     background-color: #FBD87F;
 }
+.home-btn{
+    position: absolute;
+    top:5vh;
+    left: 3vw;
+    width: 650px;
+}
+.card{
+    background-color: #423E3B;
+    color: white;
+    height: 63vh;
+    margin: 20px;
+    font-size:30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-header{
+    font-weight: bold;
+    font-size: 40px;
+}
+.imgstyle{
+position: relative;
+height: 30vh;
+width: 10vw;
+border: solid black 5px;
+
+}
+.text-info{
+    font-size: 50px;
+    color: black;
+}
+.is-rounded{
+    background-color: #3E78D6;
+    color: white;
+}
+
+.search-btn{
+    background-color: #3E78D6;
+}
+
