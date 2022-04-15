@@ -37,6 +37,7 @@ var getTrailerLink = function (myId) {
       title.textContent = data["title"];
       movieRating.textContent = data["year"];
       youtubeApi(title.textContent, movieRating.textContent);
+      localStorage.setItem("history", data.fullTitle);
     })
     .catch(() => console.log("Error"));
 };
