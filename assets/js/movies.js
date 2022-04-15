@@ -84,17 +84,3 @@ var id = getUrlParameter("id");
 console.log("You clicked" + id);
 getTrailerLink(id);
 getMovieInfo(id);
-
-// // function youtube(searchValue) {
-// //   fetch(
-// //     "https://youtube.googleapis.com/youtube/v3/search?key=" +
-// //       ytApiKey +
-// //       "&type=video&part=snippet&q=" +
-// //       searchValue +
-// //       "trailer"
-// //   )
-// //     .then((response) => response.json())
-// //     .then((data) => {
-// //       console.log(data);
-// //     });
-// // }
