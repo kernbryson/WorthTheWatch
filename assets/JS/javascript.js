@@ -123,5 +123,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 function getLocal() {
-  localStorage.getItem("history");
+  var previousList = "";
+
+  var history = JSON.parse(localStorage.getItem("history")); 
+  if(history){
+    var historyBox = $("#movieList");
+        for(var i = 0 ; i < history.length; i++){
+         historyBox.html($(`<li>${history[i]}</li>`));   
+            
+                  
+        } 
+        
+    }
 }
