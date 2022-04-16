@@ -4,9 +4,7 @@ let imdbGenre_title_Url =
   "https://imdb-api.com/API/AdvancedSearch/k_w0qs6e0f?title=";
 
 let imdbKey = "k_w0qs6e0f";
-let rottenUrl =
-  "http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=";
-let rottenKey = "bpmqxh5zby5g7xkdqqhsfypq";
+
 let searchValue = "";
 let searchBtn = document.querySelector(".search-btn");
 let searchInput = document.querySelector(".search-input");
@@ -76,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Functions to open and close a modal
   function openModal($el) {
     $el.classList.add("is-active");
+    getLocal();
     // let historyUl = document.querySelector("#historylist");
     // let moviesListElements = getLocal();
     // moviesListElements.forEach((movieItem) => historyUl.append(movieItem));
@@ -125,18 +124,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// function getLocal() {
-//   let moviesArray = JSON.parse(localStorage.getItem("history"));
-//   let moviesListItems = [];
-//   moviesArray.forEach((movie) => {
-//     let listItem = document.createElement("li");
-//     let title = document.createElement("p");
-//     let movieElement = document.createElement("p");
-//     title.textContent = movie["title"];
-//     movieElement.textContent = movie["movieId"];
-//     listItem.append(title);
-//     listItem.append(movieElement);
-//     moviesListItems.push(listItem);
-//   });
-//   return moviesListItems;
-// }
+function getLocal() {
+  let moviesArray = JSON.parse(localStorage.getItem("history"));
+  let moviesListItems = [];
+  let olControl = $("#movieList");
+  moviesArray.forEach((movie) => {
+    let listItem = document.createElement("li");
+    let aElement = document.createElement("a");
+    aElement.href = "\movies.html?id=" + movie["MovieId"];
+    aElement.text = movie["Title"];
+    listItem.append(aElement);
+
+    // let title = document.createElement("p");
+    // let movieElement = document.createElement("p");
+    // title.textContent = movie["Title"];
+    // movieElement.textContent = movie["MovieId"];
+    //listItem.append(title);
+    //listItem.append(movieElement);
+    moviesListItems.push(listItem);
+  });
+  olControl.append(moviesListItems);
+  return moviesListItems;
+}
