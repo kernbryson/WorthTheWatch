@@ -41,6 +41,7 @@ var getTrailerLink = function (myId) {
       //   movieId: data["imDbId"],
       // };
       // movieHistory.push(movieObject);
+      populateSearchHistory(data["imDbId"], data["title"]);
       console.log("You clicked" + data.fullTitle);
       title.textContent = data["title"];
       releaseDate.textContent = data["year"];
@@ -49,6 +50,34 @@ var getTrailerLink = function (myId) {
     })
     .catch(() => console.log("Error"));
 };
+
+// function to store and populate search history
+function populateSearchHistory(imdbId, titleMovie){
+
+  var history = JSON.parse(localStorage.getItem("history"));  
+  var listitem = {
+      Title: titleMovie,
+      MovieId: imdbId,
+    };
+
+  // If exists 
+  if(history){
+
+      for(var i = 0 ; i < history.length; i++){
+          
+          if(history[i].MovieId === imdbId){
+              return;
+          }         
+      } 
+      history.unshift(listitem);        
+  }
+  else{
+          history = [listitem]; 
+  }
+
+  localStorage.setItem("history", JSON.stringify(history));   
+}
+
 
 function getMovieInfo(myId) {
   var apiUrl =
