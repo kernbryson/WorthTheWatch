@@ -1,5 +1,5 @@
 :root {
-    background-color: #F49D37;
+    background-color: #D77A61;
     color: rgba(38, 143, 212, 0.512);
 
 }
@@ -8,7 +8,7 @@
     
 }
 .background{
-    background-color:#999799;
+    background-color:#D77A61;
 }
 
 .picture{
@@ -103,11 +103,11 @@ max-width: 20vw;
     padding-left: 20px;
 }
 .title{
-    font-size: 40px;
+    font-size: 50px;
     color: black;
     font-weight: bold;
     text-align: center;
-    font-family: "roboto";
+    font-family: "limelight";
     
 }
 .movie-title{
@@ -143,12 +143,12 @@ background-color: white;
     position: absolute;
     top:5vh;
     left: 3vw;
-    width: 650px;
+    width: 615px;
 }
 .card{
     background-color: #423E3B;
     color: white;
-    height: 63vh;
+    height: 58vh;
     margin: 20px;
     font-size:30px;
     border-radius: 10px;
@@ -180,4 +180,16 @@ border: solid black 5px;
 .label{
     font-size: 35px;
     color: black;
+}
+.rewardscall, .genrecall, .writercall, .actorscall{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.history-btn{
+background-color: #3E78D6;
+color: white;
+position: relative;
+left: 58vw;
 }

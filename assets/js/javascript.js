@@ -76,6 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Functions to open and close a modal
   function openModal($el) {
     $el.classList.add("is-active");
+    // let historyUl = document.querySelector("#historylist");
+    // let moviesListElements = getLocal();
+    // moviesListElements.forEach((movieItem) => historyUl.append(movieItem));
   }
 
   function closeModal($el) {
@@ -122,6 +125,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-function getLocal() {
-  localStorage.getItem("history");
-}
+// function getLocal() {
+//   let moviesArray = JSON.parse(localStorage.getItem("history"));
+//   let moviesListItems = [];
+//   moviesArray.forEach((movie) => {
+//     let listItem = document.createElement("li");
+//     let title = document.createElement("p");
+//     let movieElement = document.createElement("p");
+//     title.textContent = movie["title"];
+//     movieElement.textContent = movie["movieId"];
+//     listItem.append(title);
+//     listItem.append(movieElement);
+//     moviesListItems.push(listItem);
+//   });
+//   return moviesListItems;
+// }
