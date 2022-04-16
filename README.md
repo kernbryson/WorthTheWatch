@@ -1,68 +1,61 @@
 # WorthTheWatch
 
  Seeing that everyone is looking to watch a movie though there are so many choices it is nice to have an easy way to search and look up the movies either by genre or title.
-    
-## Please join us in searching for a title you recently heard of
+ 
+ ## User Story
 
-- Check out our source code at
- -[worththewatch](https://github.com/kernbryson/WorthTheWatch.git)
+AS a Movie Buff
+I want a website that provides me with all the information I need about a movie
+So THAT I can decide if the movie is WORTH THE WATCH
+## Expected Goals
 
-## You definately need to see the trailer to figure out if it's Worth the Watch.
-using youtube we can provide trailers to accompany your search
+* If I search for a film or television show by title or genre 
+Then I am presented with search results resembling my search query
+The results will display a brief description of the movie including plot rating and movie poster
+* When I click a movie image i am taken to another page that displays more detailed information about that movie including the movie rating, director, main actors, and a youtube trailer
+* When i click on previous searches a card appears with the previously searched movies 
 
--[youtubeApi](https://developers.google.com/youtube/v3)
-## *<p align="center">
-## [![Brysons GitHub stats](https://github-readme-stats.vercel.app/api?username=kernbryson)](https://github.com/kernbryson/github-readme-stats#gh-dark-mode-only)
+## Technologies used
+
+* we used the imdb and youtube api to gather data from their servers using api keys
+
+     -[imdb](https://imdb-api.com/api) 
+     -[youtubeApi](https://developers.google.com/youtube/v3)
+
+* we have used Bulma CSS to style our index and movies pages
+ Also we have use the Bulma modal card to display our previous searches
+ 
+* we used local storage to gather and hold the search history to later be used
+     
+## Screenshots
 
 
-# using [imdb](https://imdb-api.com/api) the amount of information for movies you are interested in seems limitless
+##  Link to the deployed application
+[WorthTheWatch](https://kernbryson.github.io/WorthTheWatch/)
 
 
-## Some of the things we intend to do in the future include following through all the way to paid viewing options.
-
-- To include sponsorship throughout all aspects of film memorabilia to include but not be limited to the official film poster other types of clothing and possibly even some fanpage sites.
-
-- Social media links to actors sites can be a further feature to add some user interactivity.
-
-- Possibly even giving access to fan sites to connect with a broader audience.
-
-    - [cinemasins](https://www.youtube.com/redirect?event=channel_banner&redir_token=QUFFLUhqbDRXcE82ekwxOTE2OVRQZXFWODZrcW9YaHE2UXxBQ3Jtc0ttbTl0OXJJNWdmajNRNERhSUtJVW93RS0wLUI2YjJvMXVFaEk4UkduN0wtMDhjVThERk1GUGE0bmxZdTg5eGNGMGgwaUVtMjNvQkgybzZNclBEQmY4N2paUXJFU1kxMlVvT0d5NjNjNTFNcVBLQzRGVQ&q=http%3A%2F%2Fcinemasins.com)
+    <!-- - [cinemasins](https://www.youtube.com/redirect?event=channel_banner&redir_token=QUFFLUhqbDRXcE82ekwxOTE2OVRQZXFWODZrcW9YaHE2UXxBQ3Jtc0ttbTl0OXJJNWdmajNRNERhSUtJVW93RS0wLUI2YjJvMXVFaEk4UkduN0wtMDhjVThERk1GUGE0bmxZdTg5eGNGMGgwaUVtMjNvQkgybzZNclBEQmY4N2paUXJFU1kxMlVvT0d5NjNjNTFNcVBLQzRGVQ&q=http%3A%2F%2Fcinemasins.com)
 
     - [jeremyjahns](https://www.youtube.com/redirect?event=channel_banner&redir_token=QUFFLUhqa1pVSG5QYjVTVHdtU2NfdFl0dm5xbnRXdXhTQXxBQ3Jtc0tuV2xBSWRCQkExMms3YVZoaXVZb1YzM0VzTlZpb096ampIWUFlYWJqcEhkNW9yM0p2VnRpWXkwTk5aRzBWTE4teE8wajJPX2Z2RG16ZGRFRFRKZEZ0MXk5UmoxRWRDQzF4UTZhSnBQX0tIdS00NkJ2VQ&q=http%3A%2F%2Fwww.JeremyJahns.com)
     -[chrisstuckman](https://www.youtube.com/user/chrisstuckmann)
 
-    -
+    - -->
 
 - Reviews are often a major factor in a selection, through the social media connection to various fan sites the opportunities to gather reviews from previously obscured sources is limited by imagination alone.
 [RogerEbert](https://www.rogerebert.com/)
 
 -ideally these reviews and movie suggestions would extend through all languages to include the same varieties and selection of films produced internationally.
 
-## These were the objectives for our project
 
-- [x] to use two seperate apis
-
-## some of the functionality used in our app is as follows
-
-AS a USER i want to search for a movie
-If i type in a movie title 
-Then a selection of movies displays beginning with the selected title and giving additional titles
-When viewing the movie title an option to click on the poster to view the trailer is available
-If i select a genre
-then a selection of movies to choose from relative to the selected genres appear
-If i want to select from movies i have previously selected a search history is included
 
 ## We have used the following tools in creating this project
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=JavaScript&color=F7DF1E)-![](https://img.shields.io/badge/Code-HTML5-informational?style=flat&logo=HTML5&color=E34F26)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![Freelancer](https://img.shields.io/badge/Freelancer-29B2FE?style=for-the-badge&logo=Freelancer&logoColor=white)
-## <p align="right">
-contributors include Bhavna Jain, Bryson Kern, Dewey Preast and Tony Watkins
-<p align="left">
 
-## <b>please feel free to contact us:
+## Contributors
 
-## [Bhavna Jain](mailto:Bhavnaostwal@gmail.com)
+* [Bhavna Jain](mailto:Bhavnaostwal@gmail.com)
     
-## [Bryson Kern](mailto:kernbryson@yahoo.com)
+* [Bryson Kern](mailto:kernbryson@yahoo.com)
 
-## [Dewey Preast](mailto:Aestheticfoliage@outlook.com)
+* [Dewey Preast](mailto:Aestheticfoliage@outlook.com)
