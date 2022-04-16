@@ -122,3 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+function getLocal() {
+  localStorage.getItem("history");
+}
