@@ -31,15 +31,21 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 var getTrailerLink = function (myId) {
   var apiUrl = "https://imdb-api.com/en/API/Trailer/k_w0qs6e0f/" + myId;
+  // let movieHistory = JSON.parse(localStorage.getItem("history")) || [];
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+      // let movieObject = {
+      //   title: data["title"],
+      //   movieId: data["imDbId"],
+      // };
+      // movieHistory.push(movieObject);
       console.log("You clicked" + data.fullTitle);
       title.textContent = data["title"];
       releaseDate.textContent = data["year"];
       youtubeApi(title.textContent, releaseDate.textContent);
-      localStorage.setItem("history", data.fullTitle);
+      // localStorage.setItem("history", JSON.stringify(movieHistory));
     })
     .catch(() => console.log("Error"));
 };
