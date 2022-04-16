@@ -28,16 +28,19 @@ The results will display a brief description of the movie including plot rating 
 * we used local storage to gather and hold the search history to later be used
      
 ## Screenshots
+![Worth The Watch Home](./assets/images/Screenshot-1.png)
+
+
+![Movie Info](./assets/images/Screenshot-2.png)
+
+![WorthTheWatch](./assets/images/Worth-The-Watch.gif)
 
 
 ##  Link to the deployed application
 [WorthTheWatch](https://kernbryson.github.io/WorthTheWatch/)
 
 
-## We have used the following tools in creating this project
-
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=JavaScript&color=F7DF1E)-![](https://img.shields.io/badge/Code-HTML5-informational?style=flat&logo=HTML5&color=E34F26)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![Freelancer](https://img.shields.io/badge/Freelancer-29B2FE?style=for-the-badge&logo=Freelancer&logoColor=white)
-
+    
 ## Contributors
 
 * [Bhavna Jain](mailto:Bhavnaostwal@gmail.com)

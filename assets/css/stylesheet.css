@@ -148,7 +148,7 @@ background-color: white;
 .card{
     background-color: #423E3B;
     color: white;
-    height: 58vh;
+    height: 70vh;
     margin: 20px;
     font-size:30px;
     border-radius: 10px;
@@ -192,4 +192,8 @@ background-color: #3E78D6;
 color: white;
 position: relative;
 left: 58vw;
+}
+
+.searchcolor{
+    color:white;
 }
