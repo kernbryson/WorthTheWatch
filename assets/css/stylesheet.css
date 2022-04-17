@@ -142,8 +142,8 @@ background-color: white;
 .home-btn{
     position: absolute;
     top:5vh;
-    left: 3vw;
-    width: 615px;
+    left: 4vw;
+    width: 62vh;
 }
 .card{
     background-color: #423E3B;
@@ -175,7 +175,7 @@ border: solid black 5px;
 }
 
 .search-btn{
-    background-color: #3E78D6;
+    background-color: #485fc7;
 }
 .label{
     font-size: 35px;
@@ -188,7 +188,8 @@ border: solid black 5px;
 
 
 .history-btn{
-background-color: #3E78D6;
+background-color: #485fc7;
+border-style: none;
 color: white;
 position: relative;
 left: 58vw;
@@ -197,3 +198,50 @@ left: 58vw;
 .searchcolor{
     color:white;
 }
+@media only screen and (max-width: 500px) {
+    .history-btn {
+      left: 0vw;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .search-input {
+      width: 80vw;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .card {
+      width:70vw;
+      height: 100vh;
+      font-size: 25px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .home-btn {
+        width: 13vh;
+        left: 35vw;
+        position: absolute;
+        top: 1vw;
+
+
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .movieposter {
+     display: none;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .titlebox {
+      margin-top: 12vh;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .youtubemovie {
+      height: 30vh;
+    }
+  }
+  @media only screen and (max-width: 1481px) {
+    .home-btn {
+      width: 20vh;
+    }
+  }
