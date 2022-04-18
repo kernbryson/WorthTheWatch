@@ -134,15 +134,10 @@ function getLocal() {
     aElement.href = "\movies.html?id=" + movie["MovieId"];
     aElement.text = movie["Title"];
     listItem.append(aElement);
-
-    // let title = document.createElement("p");
-    // let movieElement = document.createElement("p");
-    // title.textContent = movie["Title"];
-    // movieElement.textContent = movie["MovieId"];
-    //listItem.append(title);
-    //listItem.append(movieElement);
+  
     moviesListItems.push(listItem);
   });
+  olControl.empty();
   olControl.append(moviesListItems);
   return moviesListItems;
 }
