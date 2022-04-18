@@ -1,5 +1,5 @@
 :root {
-    background-color: #D77A61;
+    background-color: #2a9d8f;
     color: rgba(38, 143, 212, 0.512);
 
 }
@@ -8,7 +8,7 @@
     
 }
 .background{
-    background-color:#D77A61;
+    background-color:#2a9d8f;
 }
 
 .picture{
@@ -104,7 +104,7 @@ max-width: 20vw;
 }
 .title{
     font-size: 50px;
-    color: black;
+    color: #e9c46a;
     font-weight: bold;
     text-align: center;
     font-family: "limelight";
@@ -112,7 +112,7 @@ max-width: 20vw;
 }
 .movie-title{
     font-size: 80px;
-    color: #F0A202;
+    color: #ca6702;
     text-align: center;
     
 }
@@ -142,8 +142,11 @@ background-color: white;
 .home-btn{
     position: absolute;
     top:5vh;
-    left: 3vw;
-    width: 615px;
+    left: 4vw;
+    width: 62vh;
+    background-color: #023047;
+    border:none;
+    color:white
 }
 .card{
     background-color: #423E3B;
@@ -157,6 +160,7 @@ background-color: white;
 .card-header{
     font-weight: bold;
     font-size: 40px;
+    color: #e9c46a;
 }
 .imgstyle{
 position: relative;
@@ -168,6 +172,7 @@ border: solid black 5px;
 .text-info{
     font-size: 50px;
     color: black;
+    font-weight: bold;
 }
 .is-rounded{
     background-color: #3E78D6;
@@ -175,7 +180,7 @@ border: solid black 5px;
 }
 
 .search-btn{
-    background-color: #3E78D6;
+    background-color: #485fc7;
 }
 .label{
     font-size: 35px;
@@ -188,7 +193,8 @@ border: solid black 5px;
 
 
 .history-btn{
-background-color: #3E78D6;
+background-color: #485fc7;
+border-style: none;
 color: white;
 position: relative;
 left: 58vw;
@@ -197,3 +203,50 @@ left: 58vw;
 .searchcolor{
     color:white;
 }
+@media only screen and (max-width: 500px) {
+    .history-btn {
+      left: 0vw;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .search-input {
+      width: 80vw;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .card {
+      width:70vw;
+      height: 100vh;
+      font-size: 25px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .home-btn {
+        width: 13vh;
+        left: 35vw;
+        position: absolute;
+        top: 1vw;
+
+
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .movieposter {
+     display: none;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .titlebox {
+      margin-top: 12vh;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .youtubemovie {
+      height: 30vh;
+    }
+  }
+  @media only screen and (max-width: 1481px) {
+    .home-btn {
+      width: 20vh;
+    }
+  }

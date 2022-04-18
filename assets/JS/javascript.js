@@ -131,7 +131,7 @@ function getLocal() {
   moviesArray.forEach((movie) => {
     let listItem = document.createElement("li");
     let aElement = document.createElement("a");
-    aElement.href = "\movies.html?id=" + movie["MovieId"];
+    aElement.href = "movies.html?id=" + movie["MovieId"];
     aElement.text = movie["Title"];
     listItem.append(aElement);
   
