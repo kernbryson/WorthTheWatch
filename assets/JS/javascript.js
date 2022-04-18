@@ -11,6 +11,7 @@ let searchInput = document.querySelector(".search-input");
 
 $(".button").click(search);
 
+// getting the search movie from the input box
 function search(event) {
   genre = $(event.target)[0].getInnerHTML();
   if (genre == "Search") genre = null;
@@ -20,14 +21,15 @@ function search(event) {
   getMovies(genre, searchValue);
 }
 
+// fetching the searched movie from imbd server
 function getMovies(genre, searchValue) {
   var finalUrl = "";
   if (genre != null && searchValue != null && searchValue != "") {
-    finalUrl = imdbGenreUrl + genre + "&title=" + searchValue; //+ "&title_type=feature" ;
+    finalUrl = imdbGenreUrl + genre + "&title=" + searchValue;
   } else if (genre != null) {
-    finalUrl = imdbGenreUrl + genre; // + "&title_type=feature";
+    finalUrl = imdbGenreUrl + genre;
   } else {
-    finalUrl = imdbGenre_title_Url + searchValue; //  + "&title_type=feature";
+    finalUrl = imdbGenre_title_Url + searchValue;
   }
   fetch(finalUrl)
     .then((response) => response.json())
@@ -38,6 +40,7 @@ function getMovies(genre, searchValue) {
     .catch(() => console.log("Error"));
 }
 
+//creating dynamic card for search results to display
 function displayMovies(resultsMovie) {
   for (var i = 0; i < resultsMovie.length; i++) {
     var card = $("<div>").addClass("card");
@@ -49,6 +52,7 @@ function displayMovies(resultsMovie) {
     var imgIcon = $("<img>").attr("src", resultsMovie[i].image);
     figure.append(imgIcon);
     var myId = resultsMovie[i].id;
+    // making image card clickable
     imgIcon.wrap(
       "<a id='a" + myId + "' href=" + "./movies.html?id=" + myId + "></a>"
     );
@@ -75,9 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal($el) {
     $el.classList.add("is-active");
     getLocal();
-    // let historyUl = document.querySelector("#historylist");
-    // let moviesListElements = getLocal();
-    // moviesListElements.forEach((movieItem) => historyUl.append(movieItem));
+
   }
 
   function closeModal($el) {
@@ -124,6 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// getting previous search movies from local storage and display on modal
 function getLocal() {
   let moviesArray = JSON.parse(localStorage.getItem("history"));
   let moviesListItems = [];
