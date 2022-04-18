@@ -11,6 +11,8 @@ let youtubeVideo = document.querySelector(".youtubemovie");
 let movieLegnth = document.querySelector(".lengthcall");
 let ytApiKey = "AIzaSyDiOCYClrpn3Cz3dIBf7MCWsD-e9KltnIE";
 
+
+//getting the movie id of the searched movie 
 var getUrlParameter = function getUrlParameter(sParam) {
   var sPageURL = window.location.search.substring(1),
     sURLVariables = sPageURL.split("&"),
@@ -28,25 +30,21 @@ var getUrlParameter = function getUrlParameter(sParam) {
   }
   return false;
 };
-
+//getting movie trailer from youtube api
 var getTrailerLink = function (myId) {
   var apiUrl = "https://imdb-api.com/en/API/Trailer/k_w0qs6e0f/" + myId;
-  // let movieHistory = JSON.parse(localStorage.getItem("history")) || [];
+  
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      // let movieObject = {
-      //   title: data["title"],
-      //   movieId: data["imDbId"],
-      // };
-      // movieHistory.push(movieObject);
+
       populateSearchHistory(data["imDbId"], data["title"]);
       console.log("You clicked" + data.fullTitle);
       title.textContent = data["title"];
       releaseDate.textContent = data["year"];
       youtubeApi(title.textContent, releaseDate.textContent);
-      // localStorage.setItem("history", JSON.stringify(movieHistory));
+      
     })
     .catch(() => console.log("Error"));
 };
@@ -78,7 +76,7 @@ function populateSearchHistory(imdbId, titleMovie){
   localStorage.setItem("history", JSON.stringify(history));   
 }
 
-
+//getting the searched movie info from the imdb server
 function getMovieInfo(myId) {
   var apiUrl =
     "https://imdb-api.com/en/API/Title/k_w0qs6e0f/" +

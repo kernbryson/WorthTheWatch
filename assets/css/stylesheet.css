@@ -203,6 +203,8 @@ left: 58vw;
 .searchcolor{
     color:white;
 }
+
+/* media query to make website responsive */
 @media only screen and (max-width: 500px) {
     .history-btn {
       left: 0vw;
